@@ -30,8 +30,8 @@ function Table() {
                             <td>{item.country}</td>
                             <td>{item.name}</td>
                             <td>{item.rank + 1}</td>
-                            <td>{item.money}</td>
-                            <td>{item.rank - item.oldRank}</td>
+                            <td>{item.score}</td>
+                            <td className={item.rank - item.oldRank > 0 ? "positive" : item.rank - item.oldRank === 0 ? "neutral" : "negative"}>{item.rank - item.oldRank}</td>
                         </tr>) : <></>}
                 </tbody>
             </table>

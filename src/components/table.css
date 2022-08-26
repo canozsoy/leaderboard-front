@@ -1,5 +1,24 @@
+.tableWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.positive {
+    color: green
+}
+
+.neutral {
+    color: yellow
+}
+
+.negative {
+    color: red
+}
+
 .leaderTable {
-    width: 100%;
+    min-width: 75%;
 }
 
 .leaderTable thead {
